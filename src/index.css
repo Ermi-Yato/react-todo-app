@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  /* light colors */
+  --Bright-blue: #3a7bfd;
+  --gradient-one: #57ddff;
+  --gradient-two: #c058f3;
+  --Very-Light-gray: #fafafa;
+  --Very-Light-Grayish-blue: #e4e5f1;
+  --Light-Grayish-blue: #d2d3db;
+  --Dark-Grayish-blue: #9394a5;
+  --Very-Dark-Grayish-blue: #484b6a;
+
+  /* dark colors */
+  --Bright-blue: #3a7bfd;
+  --Very-Dark-Blue: #161722;
+  --Very-Dark-Desaturated-Blue: #25273c;
+  --Light-Grayish-Blue: #cacde8;
+  --Light-Grayish-Blue-hover: #e4e5f1;
+  --Dark-Grayish-Blue: #777a92;
+  --Very-Dark-Grayish-blue: #4d5066;
+  /* --Very-Dark-Grayish-Blue: #393a4c; */
+
+  /* font-size  */
+  --fs-body: 1.125rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* for the background image */
+  --bg-image: url("/bg-desktop-light.jpg");
+  --bg-body: var(--Very-Light-gray);
+  --text-color: var(--Very-Dark-Grayish-blue);
+  --input-color: var(--Very-Dark-Grayish-Blue);
+  --bg-input: var(--Very-Light-gray);
+  --bg-checkbox: linear-gradient(to right, var(--gradient-one), var(--gradient-two));
+
+  --font-josefin: 'Josefin Sans', sans-serif;
+}
+
+.font-josefin {
+  font-family: var(--font-josefin);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+/* the dark theme indicator */
+.dark {
+  --bg-image: url("/bg-desktop-dark.jpg");
+  --bg-input: var(--Very-Dark-Desaturated-Blue);
+  --text-color: var(--Light-Grayish-blue);
+  --input-color: var(--Light-Grayish-blue);
+  --bg-body: var(--Very-Dark-Blue)
+}
